@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #ffffff;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  text-align: left;
+  color: #0096dc;
+}
+
+header .logo-img {
+  margin-right: 26px;
+}
+
+header .work-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .work-time .btn-call {
+  padding: 14px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 15px;
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #55a831;
+  border-radius: 10px;
+  border: solid 2px #55a831;
+}
+
+header .work-time .btn-call span {
+  width: 100px;
+  display: block;
+  line-height: 18px;
+}
+
+header .work-time .btn-call img {
+  margin-right: 10px;
+}
+
+header .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .time img {
+  margin-right: 21px;
+}
+
+header .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .phone span {
+  display: block;
+}
+
+header .phone img {
+  margin-right: 15px;
+}
+
+header .phone-number a {
+  font-family: OpenSans;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: right;
+  color: #333333;
+  margin-bottom: 14px;
+}
+
+header .phone-number span {
+  font-family: OpenSans;
+  font-size: 15px;
+  text-align: right;
+  color: #0089cc;
+}
+/*# sourceMappingURL=style.css.map */
