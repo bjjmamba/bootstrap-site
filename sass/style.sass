@@ -17,17 +17,19 @@ header
         color: #0096dc
         &-img
             margin-right: 26px
+        &-descr span
+            max-width: 220px
+            display: block
     & .work-time
         display: flex
         justify-content: space-around
         align-items: center
         flex-direction: row
         & .btn-call
-            padding: 14px 15px
             display: flex
             flex-direction: row
             align-items: center
-            padding: 14px 15px
+            padding: 10px 15px
             font-family: OpenSans
             font-size: 20px
             font-weight: bold
@@ -55,6 +57,7 @@ header
         & span
             display: block
         & img
+            margin-top: 7px
             margin-right: 15px
         &-number
             & a
@@ -69,3 +72,83 @@ header
                 font-size: 15px
                 text-align: right
                 color: #0089cc
+.main
+    padding-top: 100px
+    background: url(../img/main/main-bg.png) no-repeat center 
+    background-size: cover
+    height: 100vh
+    &-descr
+        & p
+            max-width: 430px
+            font-family: OpenSans
+            font-size: 26px
+            font-weight: bold
+            text-align: left
+            color: #333333
+            text-align: left
+            margin-bottom: 100px
+            & span
+                font-family: OpenSans
+                font-size: 55px
+                font-weight: bold
+                text-align: left
+                color: #333333
+    &-advantages
+        display: flex
+        flex-direction: row
+        justify-content: flex-start 
+.advantages-block
+    border: solid 1px #ffffff
+    background-color: #0d8fe3
+    display: block
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    margin-right: 20px
+    & img
+        transform: translateY(-20px)
+        height: 52px
+        margin: 0 auto
+        display: block
+    & p
+        font-family: OpenSans
+        font-size: 16px
+        font-weight: bold
+        text-align: center
+        color: #ffffff
+        margin-top: -15px
+.form
+    border-radius: 10px
+    background-color: #ffffff
+    padding: 35px 50px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    text-align: center  
+    & .title
+        display: block
+        font-family: OpenSans
+        font-size: 20px
+        font-weight: bold
+        color: #333333
+        margin-bottom: 35px
+    & input
+        margin-bottom: 20px
+        border-radius: 10px
+        border: solid 1px #d1d1d1
+        height: 60px
+        text-align: center
+    & form
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+.send
+    border-radius: 10px
+    box-shadow: 0px 2px 20px 0 rgba(255, 153, 0, 0.4)
+    border: solid 1px #ffc600
+    background-image: linear-gradient(to top, #ffed26, #ffb400)
+    font-family: OpenSans
+    font-size: 20px
+    font-weight: bold
+    text-align: center
+    color: #000000
