@@ -20,6 +20,8 @@ header
         &-descr span
             max-width: 220px
             display: block
+            font-family: "OpenSans-Regular"
+
     & .work-time
         display: flex
         justify-content: space-around
@@ -30,14 +32,13 @@ header
             flex-direction: row
             align-items: center
             padding: 10px 15px
-            font-family: OpenSans
-            font-size: 20px
-            font-weight: bold
             text-align: left
             color: #55a831
             border-radius: 10px
             border: solid 2px #55a831
             & span 
+                font-family: "OpenSans-SemiBold"
+                font-size: 14px
                 width: 100px
                 display: block
                 line-height: 18px
@@ -47,6 +48,8 @@ header
         display: flex
         flex-direction: row
         align-items: center
+        & span
+            font-family: "OpenSans-Regular"
         & img
             margin-right: 21px
     & .phone
@@ -61,14 +64,13 @@ header
             margin-right: 15px
         &-number
             & a
-                font-family: OpenSans
+                font-family: "OpenSans-Bold"
                 font-size: 23px
-                font-weight: bold
                 text-align: right
                 color: #333333
                 margin-bottom: 14px
             & span
-                font-family: OpenSans
+                font-family: "OpenSans-Regular"
                 font-size: 15px
                 text-align: right
                 color: #0089cc
@@ -76,21 +78,18 @@ header
     padding-top: 100px
     background: url(../img/main/main-bg.png) no-repeat center 
     background-size: cover
-    height: 100vh
+    height: 100vh  
     &-descr
         & p
-            max-width: 430px
-            font-family: OpenSans
+            max-width: 480px
+            font-family: "OpenSans-Bold"
             font-size: 26px
-            font-weight: bold
             text-align: left
             color: #333333
             text-align: left
             margin-bottom: 100px
             & span
-                font-family: OpenSans
-                font-size: 55px
-                font-weight: bold
+                font-size: 53px
                 text-align: left
                 color: #333333
     &-advantages
@@ -111,9 +110,8 @@ header
         margin: 0 auto
         display: block
     & p
-        font-family: OpenSans
-        font-size: 16px
-        font-weight: bold
+        font-family: "OpenSans-Bold"
+        font-size: 14px
         text-align: center
         color: #ffffff
         margin-top: -15px
@@ -127,9 +125,8 @@ header
     text-align: center  
     & .title
         display: block
-        font-family: OpenSans
+        font-family: "OpenSans-Bold"
         font-size: 20px
-        font-weight: bold
         color: #333333
         margin-bottom: 35px
     & input
@@ -142,24 +139,40 @@ header
         display: flex
         flex-direction: column
         justify-content: flex-start
+        & label
+            font-family: "OpenSans-Regular"
+            font-size: 11px
+            letter-spacing: normal
+            text-align: center
+            color: #666666
 .send
     border-radius: 10px
     box-shadow: 0px 2px 20px 0 rgba(255, 153, 0, 0.4)
     border: solid 1px #ffc600
     background-image: linear-gradient(to top, #ffed26, #ffb400)
-    font-family: OpenSans
+    font-family: "OpenSans-Bold"
     font-size: 20px
-    font-weight: bold
     text-align: center
     color: #000000
 
 // job
 h2
-    font-family: OpenSans
+    font-family: "OpenSans-Bold"
     font-size: 30px
-    font-weight: bold
     text-align: center
     color: #333333
+    position: relative
+    margin-bottom: 100px
+    &:after
+        position: absolute
+        top: 52px
+        left: 41%
+        margin: 0 auto
+        content: ' '
+        display: block
+        width: 170px
+        height: 2px
+        background: url(../img/after.png)
 
 .job
     padding-top: 80px
@@ -173,34 +186,29 @@ h2
             width: 100px
             height: 100px
         & p
-            font-family: OpenSans
+            font-family: "OpenSans-SemiBold"
             font-size: 18px
-            font-weight: 600
             text-align: center
             color: #249ae6
     &-info
-        padding: 40px 58px
+        padding: 40px 40px
         text-align: center
         margin-bottom: 100px
         & .title
             display: block
-            font-family: OpenSans
+            font-family: "OpenSans-Bold"
             font-size: 20px
-            font-weight: bold
-            font-stretch: normal
-            font-style: normal
-            line-height: 2.4
-            letter-spacing: normal
             text-align: center
             margin-bottom: 29px
+            text-transform: uppercase
         & .title-cold
             color: #0d8fe3
         & .title-warm
             color: #ffb903
     &-cold
-        background: linear-gradient(to top, rgba(13, 143, 227, 1), #ffffff)
+        background: url(../img/job/fon.png) top no-repeat, url(../img/job/str-cold.png) top no-repeat
     &-warm
-        background: linear-gradient(to top, rgba(255, 185, 3, 0.99), #ffffff)
+        background: url(../img/job/fon-1.png) top no-repeat, url(../img/job/str-warm.png) top no-repeat
     &-photo
         overflow: hidden
         & img
@@ -218,9 +226,8 @@ h2
         margin-bottom: 5px
         & p
             text-align: left
-            font-family: OpenSans
+            font-family: "OpenSans-Regular"
             font-size: 14px
-            font-weight: normal
             color: #000000
         & img
             margin-right: 17px
@@ -231,14 +238,12 @@ h2
         &__info
             text-align: left
             & p
-                font-family: OpenSans
+                font-family: "OpenSans-Bold"
                 font-size: 20px
-                font-weight: bold
                 color: #000000
             & small
-                font-family: OpenSans
+                font-family: "OpenSans-Regular"
                 font-size: 14px
-                font-weight: normal
                 color: #000000
 
 .send-btn
@@ -246,12 +251,11 @@ h2
     box-shadow: 0px 2px 20px 0 rgba(255, 153, 0, 0.4)
     border: solid 1px #ffc600
     background-image: linear-gradient(to top, #ffed26, #ffb400)
-    font-family: OpenSans
+    font-family: "OpenSans-Bold"
     font-size: 19px
-    font-weight: bold
     text-align: center
     color: #000000
-    padding: 24px 37px
+    padding: 18px 19px
 
 // job        
 
@@ -265,47 +269,90 @@ h2
         display: flex
         flex-direction: row
         justify-content: space-between
-        margin-bottom: 80px
+        flex-wrap: wrap
         & li
             list-style: none
             padding: 30px 25px
             & a
-                font-family: OpenSans
+                font-family: "OpenSans-SemiBold"
                 font-size: 18px
-                font-weight: 600
                 text-align: center
                 color: #0085db   
-    &-installation
-        &__title
-            display: block
-            margin-bottom: 30px
+.installation
+    transition: all 0.5s ease-in 
+    &__block
+        display: none
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
         &__img
-            margin-right: 60px
-        &__block
+            margin-right: 25px 
+        &__str
             display: flex
-            flex-direction: row
+            flex-direction: column
             justify-content: flex-start
-        &__roof__type
-            margin-bottom: 20px
+            align-items: center
+            text-align: center
+            margin-bottom: 40px
+            & img
+                margin-bottom: 20px
+        &__info
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            height: 97px
+            & .str-text
+                margin-bottom: 0px
+        &__descr
+            justify-content: flex-start
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+        &__p
+            font-family: "OpenSans-Bold"
+
+        &__type
             display: flex
             flex-direction: row
-            align-items: center
-        &__roof__descr
-            margin-bottom: 20px
-            & .work-area
-                display: block
-                font-family: OpenSans
-                font-size: 14px
-                font-weight: bold
-                text-align: left
-                color: #0d8fe3
-            & .sub-text
-                display: block
-                font-family: OpenSans
-                font-size: 12px
-                font-weight: normal
-                text-align: left
-                color: #000000
+            flex-wrap: wrap
+.installation__active
+    display: flex
+.str-title
+    display: block
+    font-family: "OpenSans-Regular"
+.str-price
+    font-family: "OpenSans-Bold"
+    font-size: 14px
+    text-align: left
+    color: #0d8fe3
+.str-type
+    font-family: "OpenSans-Regular"
+    font-size: 11px
+    text-align: center
+    color: #000000
+.width-interior-decoration
+    flex-basis: 33%
+.width-external-finish
+    flex-basis: 15%
+    margin-right: 20px
+.remote-glazing
+    flex-direction: row
+.width-remote-glazing
+    flex-direction: row
+    align-items: center
+    & img
+        margin-bottom: 0
+        width: 30px
+        margin-right: 25px
+.width-roof
+    flex-direction: row
+    align-items: center
+    & img
+        margin-bottom: 0
+        margin-right: 20px
+.installation-column
+    flex-direction: column
 // order   
 
 // our-work
@@ -314,7 +361,7 @@ h2
     padding-top: 80px
     padding-bottom: 80px
 .work-block
-    width: 270px
+    width: 100%
     height: 270px
     border-radius: 10px
     margin-right: 40px
@@ -337,12 +384,13 @@ h2
     background-color: #007ab3
     & h2
         color: #ffffff
+        &:after
+            background: url(../img/after-white.png)
     &-block    
         text-align: center
         margin-bottom: 80px
-        font-family: OpenSans
-        font-size: 18px
-        font-weight: 600    
+        font-family: "OpenSans-Regular"
+        font-size: 18px   
         color: #ffffff
         & img
             margin-bottom: 30px
@@ -358,11 +406,12 @@ h2
         display: flex
         flex-direction: row
         align-items: center
-        font-family: OpenSans
+        font-family: "OpenSans-Regular"
         font-size: 20px
-        font-weight: normal
         text-align: left
         color: #000000
+        & p 
+            margin-bottom: 0
         & img
             margin-right: 34px
 // payment           
@@ -374,12 +423,14 @@ h2
     background-size: cover
     &-title
         display: block
-        font-family: OpenSans
+        font-family: "OpenSans-Bold"
         font-size: 38px
-        font-weight: bold
         text-align: left
         color: #008cce
         margin-bottom: 81px
+    &-descr
+        font-family: "OpenSans-Regular"
+        font-size: 24px
 // stock        
 
 // about-us
@@ -392,16 +443,14 @@ h2
     &__descr
         text-align: left
         & p
-            font-family: OpenSans
+            font-family: "OpenSans-SemiBold"
             font-size: 18px
-            font-weight: 600
             text-align: left
             margin-bottom: 39px
             color: #000000
     &__title
-        font-family: OpenSans
+        font-family: "OpenSans-SemiBold"
         font-size: 15px
-        font-weight: 600
         color: #008cce
         margin-bottom: 18px
 // about-us 
@@ -413,14 +462,12 @@ h2
     padding-bottom: 40px
     background-color: #00a0eb
     & p
-        font-family: OpenSans
+        font-family: "OpenSans-Regular"
         font-size: 30px
-        font-weight: normal
         color: #ffffff
         margin-bottom: 0
     & a
-        font-family: OpenSans
+        font-family: "OpenSans-SemiBold"
         font-size: 30px
-        font-weight: 600
         color: #ffffff
 // questions

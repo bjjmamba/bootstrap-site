@@ -38,6 +38,7 @@ header .logo-img {
 header .logo-descr span {
   max-width: 220px;
   display: block;
+  font-family: "OpenSans-Regular";
 }
 
 header .work-time {
@@ -67,9 +68,6 @@ header .work-time .btn-call {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 15px;
-  font-family: OpenSans;
-  font-size: 20px;
-  font-weight: bold;
   text-align: left;
   color: #55a831;
   border-radius: 10px;
@@ -77,6 +75,8 @@ header .work-time .btn-call {
 }
 
 header .work-time .btn-call span {
+  font-family: "OpenSans-SemiBold";
+  font-size: 14px;
   width: 100px;
   display: block;
   line-height: 18px;
@@ -97,6 +97,10 @@ header .time {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .time span {
+  font-family: "OpenSans-Regular";
 }
 
 header .time img {
@@ -128,16 +132,15 @@ header .phone img {
 }
 
 header .phone-number a {
-  font-family: OpenSans;
+  font-family: "OpenSans-Bold";
   font-size: 23px;
-  font-weight: bold;
   text-align: right;
   color: #333333;
   margin-bottom: 14px;
 }
 
 header .phone-number span {
-  font-family: OpenSans;
+  font-family: "OpenSans-Regular";
   font-size: 15px;
   text-align: right;
   color: #0089cc;
@@ -151,10 +154,9 @@ header .phone-number span {
 }
 
 .main-descr p {
-  max-width: 430px;
-  font-family: OpenSans;
+  max-width: 480px;
+  font-family: "OpenSans-Bold";
   font-size: 26px;
-  font-weight: bold;
   text-align: left;
   color: #333333;
   text-align: left;
@@ -162,9 +164,7 @@ header .phone-number span {
 }
 
 .main-descr p span {
-  font-family: OpenSans;
-  font-size: 55px;
-  font-weight: bold;
+  font-size: 53px;
   text-align: left;
   color: #333333;
 }
@@ -201,9 +201,8 @@ header .phone-number span {
 }
 
 .advantages-block p {
-  font-family: OpenSans;
-  font-size: 16px;
-  font-weight: bold;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
   text-align: center;
   color: #ffffff;
   margin-top: -15px;
@@ -228,9 +227,8 @@ header .phone-number span {
 
 .form .title {
   display: block;
-  font-family: OpenSans;
+  font-family: "OpenSans-Bold";
   font-size: 20px;
-  font-weight: bold;
   color: #333333;
   margin-bottom: 35px;
 }
@@ -256,6 +254,14 @@ header .phone-number span {
           justify-content: flex-start;
 }
 
+.form form label {
+  font-family: "OpenSans-Regular";
+  font-size: 11px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+}
+
 .send {
   border-radius: 10px;
   -webkit-box-shadow: 0px 2px 20px 0 rgba(255, 153, 0, 0.4);
@@ -263,19 +269,31 @@ header .phone-number span {
   border: solid 1px #ffc600;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ffed26), to(#ffb400));
   background-image: linear-gradient(to top, #ffed26, #ffb400);
-  font-family: OpenSans;
+  font-family: "OpenSans-Bold";
   font-size: 20px;
-  font-weight: bold;
   text-align: center;
   color: #000000;
 }
 
 h2 {
-  font-family: OpenSans;
+  font-family: "OpenSans-Bold";
   font-size: 30px;
-  font-weight: bold;
   text-align: center;
   color: #333333;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+h2:after {
+  position: absolute;
+  top: 52px;
+  left: 41%;
+  margin: 0 auto;
+  content: ' ';
+  display: block;
+  width: 170px;
+  height: 2px;
+  background: url(../img/after.png);
 }
 
 .job {
@@ -294,30 +312,25 @@ h2 {
 }
 
 .material-block p {
-  font-family: OpenSans;
+  font-family: "OpenSans-SemiBold";
   font-size: 18px;
-  font-weight: 600;
   text-align: center;
   color: #249ae6;
 }
 
 .material-info {
-  padding: 40px 58px;
+  padding: 40px 40px;
   text-align: center;
   margin-bottom: 100px;
 }
 
 .material-info .title {
   display: block;
-  font-family: OpenSans;
+  font-family: "OpenSans-Bold";
   font-size: 20px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.4;
-  letter-spacing: normal;
   text-align: center;
   margin-bottom: 29px;
+  text-transform: uppercase;
 }
 
 .material-info .title-cold {
@@ -329,13 +342,11 @@ h2 {
 }
 
 .material-cold {
-  background: -webkit-gradient(linear, left bottom, left top, from(#0d8fe3), to(#ffffff));
-  background: linear-gradient(to top, #0d8fe3, #ffffff);
+  background: url(../img/job/fon.png) top no-repeat, url(../img/job/str-cold.png) top no-repeat;
 }
 
 .material-warm {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 185, 3, 0.99)), to(#ffffff));
-  background: linear-gradient(to top, rgba(255, 185, 3, 0.99), #ffffff);
+  background: url(../img/job/fon-1.png) top no-repeat, url(../img/job/str-warm.png) top no-repeat;
 }
 
 .material-photo {
@@ -377,9 +388,8 @@ h2 {
 
 .material-descr p {
   text-align: left;
-  font-family: OpenSans;
+  font-family: "OpenSans-Regular";
   font-size: 14px;
-  font-weight: normal;
   color: #000000;
 }
 
@@ -405,16 +415,14 @@ h2 {
 }
 
 .material-send__info p {
-  font-family: OpenSans;
+  font-family: "OpenSans-Bold";
   font-size: 20px;
-  font-weight: bold;
   color: #000000;
 }
 
 .material-send__info small {
-  font-family: OpenSans;
+  font-family: "OpenSans-Regular";
   font-size: 14px;
-  font-weight: normal;
   color: #000000;
 }
 
@@ -425,12 +433,11 @@ h2 {
   border: solid 1px #ffc600;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ffed26), to(#ffb400));
   background-image: linear-gradient(to top, #ffed26, #ffb400);
-  font-family: OpenSans;
+  font-family: "OpenSans-Bold";
   font-size: 19px;
-  font-weight: bold;
   text-align: center;
   color: #000000;
-  padding: 24px 37px;
+  padding: 18px 19px;
 }
 
 .order {
@@ -450,7 +457,8 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .type-of-repair li {
@@ -459,26 +467,19 @@ h2 {
 }
 
 .type-of-repair li a {
-  font-family: OpenSans;
+  font-family: "OpenSans-SemiBold";
   font-size: 18px;
-  font-weight: 600;
   text-align: center;
   color: #0085db;
 }
 
-.type-of-installation__title {
-  display: block;
-  margin-bottom: 30px;
+.installation {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.type-of-installation__img {
-  margin-right: 60px;
-}
-
-.type-of-installation__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.installation__block {
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -486,13 +487,133 @@ h2 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.type-of-installation__roof__type {
-  margin-bottom: 20px;
+.installation__block__img {
+  margin-right: 25px;
+}
+
+.installation__block__str {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.installation__block__str img {
+  margin-bottom: 20px;
+}
+
+.installation__block__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 97px;
+}
+
+.installation__block__info .str-text {
+  margin-bottom: 0px;
+}
+
+.installation__block__descr {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.installation__block__p {
+  font-family: "OpenSans-Bold";
+}
+
+.installation__block__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.installation__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.str-title {
+  display: block;
+  font-family: "OpenSans-Regular";
+}
+
+.str-price {
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  text-align: left;
+  color: #0d8fe3;
+}
+
+.str-type {
+  font-family: "OpenSans-Regular";
+  font-size: 11px;
+  text-align: center;
+  color: #000000;
+}
+
+.width-interior-decoration {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.width-external-finish {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  margin-right: 20px;
+}
+
+.remote-glazing {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.width-remote-glazing {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -502,26 +623,32 @@ h2 {
           align-items: center;
 }
 
-.type-of-installation__roof__descr {
-  margin-bottom: 20px;
+.width-remote-glazing img {
+  margin-bottom: 0;
+  width: 30px;
+  margin-right: 25px;
 }
 
-.type-of-installation__roof__descr .work-area {
-  display: block;
-  font-family: OpenSans;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: left;
-  color: #0d8fe3;
+.width-roof {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.type-of-installation__roof__descr .sub-text {
-  display: block;
-  font-family: OpenSans;
-  font-size: 12px;
-  font-weight: normal;
-  text-align: left;
-  color: #000000;
+.width-roof img {
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.installation-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .our-work {
@@ -531,7 +658,7 @@ h2 {
 }
 
 .work-block {
-  width: 270px;
+  width: 100%;
   height: 270px;
   border-radius: 10px;
   margin-right: 40px;
@@ -558,12 +685,15 @@ h2 {
   color: #ffffff;
 }
 
+.assurance h2:after {
+  background: url(../img/after-white.png);
+}
+
 .assurance-block {
   text-align: center;
   margin-bottom: 80px;
-  font-family: OpenSans;
+  font-family: "OpenSans-Regular";
   font-size: 18px;
-  font-weight: 600;
   color: #ffffff;
 }
 
@@ -592,11 +722,14 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: OpenSans;
+  font-family: "OpenSans-Regular";
   font-size: 20px;
-  font-weight: normal;
   text-align: left;
   color: #000000;
+}
+
+.payment-block p {
+  margin-bottom: 0;
 }
 
 .payment-block img {
@@ -612,12 +745,16 @@ h2 {
 
 .stock-title {
   display: block;
-  font-family: OpenSans;
+  font-family: "OpenSans-Bold";
   font-size: 38px;
-  font-weight: bold;
   text-align: left;
   color: #008cce;
   margin-bottom: 81px;
+}
+
+.stock-descr {
+  font-family: "OpenSans-Regular";
+  font-size: 24px;
 }
 
 .about-us {
@@ -635,18 +772,16 @@ h2 {
 }
 
 .about-us__descr p {
-  font-family: OpenSans;
+  font-family: "OpenSans-SemiBold";
   font-size: 18px;
-  font-weight: 600;
   text-align: left;
   margin-bottom: 39px;
   color: #000000;
 }
 
 .about-us__title {
-  font-family: OpenSans;
+  font-family: "OpenSans-SemiBold";
   font-size: 15px;
-  font-weight: 600;
   color: #008cce;
   margin-bottom: 18px;
 }
@@ -659,17 +794,15 @@ h2 {
 }
 
 .questions p {
-  font-family: OpenSans;
+  font-family: "OpenSans-Regular";
   font-size: 30px;
-  font-weight: normal;
   color: #ffffff;
   margin-bottom: 0;
 }
 
 .questions a {
-  font-family: OpenSans;
+  font-family: "OpenSans-SemiBold";
   font-size: 30px;
-  font-weight: 600;
   color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
