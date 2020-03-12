@@ -658,6 +658,7 @@ h2:after {
 }
 
 .work-block {
+  background-image: url(../img/our-work/zoom-in.png);
   width: 100%;
   height: 270px;
   border-radius: 10px;
@@ -667,11 +668,27 @@ h2:after {
   position: relative;
 }
 
-.zoom-in {
-  top: 45%;
-  left: 42%;
-  z-index: 10;
+.work-block .work-block__img {
+  width: 100%;
+  height: 120%;
+}
+
+.work-block__zoom-in {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/our-work/zoom-in.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.work-block .zoom-in_active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .assurance {
@@ -804,5 +821,50 @@ h2:after {
   font-family: "OpenSans-SemiBold";
   font-size: 30px;
   color: #ffffff;
+}
+
+.active-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(1, 1, 1, 0.5);
+  display: none;
+}
+
+.active-img__block {
+  position: relative;
+  display: block;
+  width: 60vw;
+  height: 70vh;
+  background: #ffffff;
+}
+
+.active-img .close-block {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.active-img .block-img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

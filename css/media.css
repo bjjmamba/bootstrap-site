@@ -92,4 +92,16 @@
     left: 31%;
   }
 }
+
+@media screen and (max-width: 523px) {
+  .main-advantages {
+    display: none;
+  }
+  .main-descr p {
+    text-align: center;
+  }
+  .send-btn {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=media.css.map */
