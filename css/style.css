@@ -72,6 +72,7 @@ header .work-time .btn-call {
   color: #55a831;
   border-radius: 10px;
   border: solid 2px #55a831;
+  cursor: pointer;
 }
 
 header .work-time .btn-call span {
@@ -239,6 +240,7 @@ header .phone-number span {
   border: solid 1px #d1d1d1;
   height: 60px;
   text-align: center;
+  outline: none;
 }
 
 .form form {
@@ -684,11 +686,14 @@ h2:after {
   background-position: center;
   -webkit-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .work-block .zoom-in_active {
   -webkit-transform: scale(1);
           transform: scale(1);
+  cursor: pointer;
 }
 
 .assurance {
@@ -852,6 +857,8 @@ h2:after {
   width: 60vw;
   height: 70vh;
   background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .active-img .close-block {
@@ -866,5 +873,11 @@ h2:after {
 .active-img .block-img {
   width: 100%;
   height: 100%;
+}
+
+.active-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
